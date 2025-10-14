@@ -198,28 +198,36 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 10),
 
               // Button
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      fixedSize: Size(350, 50),
-                      backgroundColor: const Color.fromARGB(255, 102, 196, 106),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, "/homepage");
+                  },
+                  child: Container(
+                    height: 50,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          Color(0xff8EE88E),
+                          Color(0xff80D180),
+                          Color(0xff6BAE6B),
+                        ],
+                      ),
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
                     ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/homepage');
-                    },
-                    child: Text(
-                      "Log in",
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w700,
+
+                    child: Center(
+                      child: Text(
+                        "Log in",
+                        style: TextStyle(fontSize: 20, color: Colors.white),
                       ),
                     ),
                   ),
-                ],
+                ),
               ),
+
               SizedBox(height: 20),
 
               Row(
