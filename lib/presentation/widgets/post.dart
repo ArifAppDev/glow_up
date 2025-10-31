@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:glow_up/model/post_values.dart';
+import 'package:glow_up/presentation/screens/home/model/post_item.dart';
 
 class Post extends StatelessWidget {
   const Post({super.key});

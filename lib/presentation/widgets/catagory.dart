@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:glow_up/model/catagory_item.dart';
+import 'package:glow_up/presentation/screens/home/model/catagory_item.dart';
 
 class CatagoryDesign extends StatelessWidget {
   const CatagoryDesign({super.key});

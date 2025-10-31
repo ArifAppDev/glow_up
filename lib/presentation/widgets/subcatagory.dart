@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:glow_up/model/subcatagoryvalue.dart';
+import 'package:glow_up/presentation/screens/home/model/subcatagory.dart';
 
 class Subcatagory extends StatelessWidget {
   const Subcatagory({super.key});
