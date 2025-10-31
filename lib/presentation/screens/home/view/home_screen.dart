@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:glow_up/widgets/banner.dart';
-import 'package:glow_up/widgets/catagory.dart';
-import 'package:glow_up/widgets/custom_app_bar.dart';
-import 'package:glow_up/widgets/post.dart';
-import 'package:glow_up/widgets/subcatagory.dart';
+import 'package:glow_up/presentation/widgets/banner.dart';
+import 'package:glow_up/presentation/widgets/catagory.dart';
+import 'package:glow_up/presentation/widgets/custom_app_bar.dart';
+import 'package:glow_up/presentation/widgets/post.dart';
+import 'package:glow_up/presentation/widgets/subcatagory.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class Homescreen extends StatefulWidget {
+  const Homescreen({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Homescreen> createState() => _HomescreenState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomescreenState extends State<Homescreen> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {

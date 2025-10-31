@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:glow_up/home_page.dart';
-import 'package:glow_up/login_page.dart';
+import 'package:get/get.dart';
+import 'package:glow_up/core/routes/app_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      initialRoute: AppRoutes.loginscreen,
 
-      routes: {'/homepage': (context) => HomePage()},
+      getPages: AppRoutes.routes,
     );
   }
 }

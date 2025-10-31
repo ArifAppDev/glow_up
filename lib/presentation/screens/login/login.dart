@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:glow_up/core/routes/app_routes.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginScreenState extends State<LoginScreen> {
   final _controllerEmail = TextEditingController();
   final _controllerPassword = TextEditingController();
 
@@ -202,13 +205,15 @@ class _LoginPageState extends State<LoginPage> {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, "/homepage");
+                    Get.toNamed(AppRoutes.homescreen);
                   },
                   child: Container(
                     height: 50,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
+                        begin: AlignmentGeometry.topCenter,
+                        end: AlignmentGeometry.bottomCenter,
                         colors: [
                           Color(0xff8EE88E),
                           Color(0xff80D180),
