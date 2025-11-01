@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:glow_up/presentation/screens/home/view/home_screen.dart';
+import 'package:glow_up/presentation/screens/home/home_screen.dart';
 import 'package:glow_up/presentation/screens/login/login.dart';
 
 class AppRoutes {
